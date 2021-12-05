@@ -1,0 +1,370 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Work+Sans:ital,wght@0,300;0,400;1,300&family=Open+Sans:wght@500&display=swap');
+
+/*importando icones*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+
+/*tirando as margens dos elementos da pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*fontes utilizadas pagina*/
+:root{
+    --font-primaria: "Fredoka One", sans-serif;
+    --font-secundaria: "Open Sans", sans-serif;
+    --font-action: "Josefin Slab", sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh; /*altura de visualizacao independente do dispositivo*/
+    overflow: hidden;/*retira a barra de rolagem horizontal*/
+    position: relative;
+    background: url("../images/bg.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.img-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.img-wrapper img{/*envelopando a imagem*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    animation: zoom 20s;
+}
+
+.banner{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.banner h1{
+    font-family: var(--font-primaria);
+    color: #fff;
+    font-size: 1.8rem;/*tamanho da fonte do banner. 3x o tamanho da fonte principal. no caso aqui eh a 16px tamanho padrao do navegador*/
+    text-shadow: .2rem .2rem 3px rgba(0, 0, 0, .4);
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: moveBanner 1s 0.5s forwards;
+}
+
+.banner p{
+    color: #1cf74b;
+    font-size: 3.7rem;/*tamanho da fonte do banner. 3x o tamanho da fonte principal. no caso aqui eh a 16px tamanho padrao do navegador*/
+    font-family: var(--font-primaria);
+    font-weight: 450;
+    text-shadow: .3rem .4rem 4px rgba(0, 0, 0, .4);
+    line-height: 4rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: moveBanner 1s 0.7s forwards;
+}
+
+.banner button{
+    font-family: var(--font-action);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    animation: moveBanner 1s 0.9s forwards;
+} 
+
+.banner button:hover{
+    color: #2F0743;    
+}  
+
+@keyframes moveBanner {
+    0%{
+        transform: translateY(10rem) rotateY(-30deg);
+    }
+        100%{
+            transform: translateY(0) rotateY(0);
+            opacity: 1;
+    }
+}
+
+.menu-container{
+    width: 100%;
+    background: #000; 
+    height: 5rem;
+    align-items: center; 
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;    
+    z-index: 1;
+}
+
+.menu-itens{
+    position: relative;
+    width: auto;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-item{ 
+    padding: 1.5rem;
+    display: inline-block;
+}
+
+.menu-link{
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    color:#fff;
+    transition: color 1s;
+}
+
+.menu-link:hover{
+    color: #1cf74b;
+}
+
+.language{
+    margin-right: 2rem;
+    font-family: var(--font-action);
+}
+
+#bttlgg{
+    background-color: #000;
+    border: none;
+}
+
+.site-sections{
+    background: #000000;  /* fallback for old browsers */
+    background: linear-gradient(to bottom, #7a7979, #0c0c0c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to bottom, #0c0c0c, #7a7979 );  /* Chrome 10-25, Safari 5.1-6 */
+}
+
+.site-sections h1{
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.section-x {
+    width: 60%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+  
+.section-x p{
+    padding: 2rem;
+    font-family: var(--font-action);
+    font-size: 1.3rem;    
+}
+
+/*section about*/
+#about{
+    width: 100%;
+    padding-top: 5rem;
+}
+
+.about-container {
+    width: 70%;
+    height: 30rem;
+    display: flex;
+}
+
+.about-left {
+    width: 50%;
+    background-image: linear-gradient(rgba(121, 118, 118, 0.6), rgba(49, 47, 47, 0.9)), url(../images/me.jpg);
+    background-size: cover;
+}
+  
+.about-right {
+    width: 50%;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+#me{
+    text-align: justify;
+    font-size: 1.2rem;
+}
+  
+/*section skills*/
+/*grid layout*/
+#skills{    
+    padding-top: 5rem;
+    /*background-color: rgb(121, 177, 177);*/
+}
+
+.skills-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 4rem);
+    gap: 1rem;
+}
+
+.skills-header {
+	grid-column: span 2;
+}
+
+.section-item-header {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-secundaria);
+}
+  
+.section-item-header i {
+    font-size: 2.5rem;
+}
+  
+.section-item-header h3 {
+    font-family: var(--font-secundaria);
+    font-size: 1.2rem;
+}
+  
+.skills-item-text {
+    font-family: var(--font-secundaria);
+    margin-top: 1rem;
+}
+
+.skill-item-bar{
+    background-color: rgb(112, 109, 109);
+}
+
+.progress-bar {
+    position: relative;
+    width: 0%;
+    height: 9px;
+    background-image: -webkit-linear-gradient(top, rgba(120, 233, 105, 0.603), rgba(36, 231, 10, 0.05));
+    background-image: -moz-linear-gradient(top, rgba(120, 233, 105, 0.603), rgba(36, 231, 10, 0.05));
+    background-image: -o-linear-gradient(top, rgba(120, 233, 105, 0.603), rgba(36, 231, 10, 0.05));
+    background-image: linear-gradient(to bottom, rgba(120, 233, 105, 0.603), rgba(36, 231, 10, 0.05));
+}
+
+#item-html{
+    animation: html-bar 2s forwards;
+}
+@keyframes html-bar {
+    100% {width: 90%;}
+} 
+
+#item-css{
+    animation: css-bar 2s forwards;
+}
+@keyframes css-bar {
+    100% {width: 80%;}
+} 
+
+#item-des{
+    animation: des-bar 2s forwards;
+}
+@keyframes des-bar {
+    100% {width: 70%;}
+} 
+
+#item-js{
+    animation: js-bar 2s forwards;
+}
+@keyframes js-bar {
+    100% {width: 30%;}
+} 
+
+#item-bs{
+    animation: bs-bar 2s forwards;
+}
+@keyframes bs-bar {
+    100% {width: 15%;}
+} 
+
+#item-git{
+    animation: git-bar 2s forwards;
+}
+@keyframes git-bar {
+    100% {width: 70%;}
+} 
+
+/*section resume*/
+/*grid layout*/
+#resume{    
+    padding-top: 5rem;
+}
+
+.resume-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 8rem);
+    gap: 1.2rem;
+}
+
+.resume-header {
+    display: flex; 
+    margin-top: 2.2rem;
+    font-family: var(--font-secundaria);
+}
+
+.resume-header div{
+    margin-left: 0.6rem;
+    width: 50%;
+}
+
+.resume-row{
+    background-color: rgba(180, 176, 176, 0.116);
+    border-radius: 0.5rem;
+    padding: 0.5rem;;
+}
+
+/*footer*/
+.copyright-container{
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-primaria);
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: -xx-small;
+}
+
+.social-media i{
+    color: rgba(16, 216, 16, 0.678);
+    height: 2.5rem;
+    width: 2.5rem ;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 1s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-media i:hover{
+    background-color: #a79faf;
+}

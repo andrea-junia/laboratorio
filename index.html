@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- add icones -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icones/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icones/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icones/favicon-16x16.png">
+    <!-- add fontes -->
+    <link rel="manifest" href="images/icones/site.webmanifest">
+    <title>Personal site</title>
+</head>
+<body>  
+    <!-- menu superior -->     
+    <header id="home">
+        <!-- pagina inicial -->        
+        <nav class="menu-container">
+            <ul class="menu-itens">
+                <li class="menu-item"><a href="#home"   class="menu-link">Home</a></li>
+                <li class="menu-item"><a href="#about"  class="menu-link">About</a></li>
+                <li class="menu-item"><a href="#skills" class="menu-link">Skills</a></li>
+                <li class="menu-item"><a href="#resume" class="menu-link">Resume</a></li>
+            </ul>
+            <div class="language">
+                <i class="fas fa-globe"></i>
+                <button type="button" id="bttlgg" onclick="fChange()">EN</button>
+            </div>
+        </nav>
+          
+        <div class="banner">
+            <h1 id="banh1">Olá Mundo! Eu Sou</h1>               
+            <p>Andrea.J</p>
+        </div>
+    </header>
+
+    <div class="site-sections">
+        <!-- section about -->
+        <section class="section-x" id="about">
+            <div class="about-container">
+                <div class="about-left"></div>
+                <div class="about-right">
+                    <h1>About <strong>Me</strong></h1>
+                    <p id="me">
+                        Geminiana, resiliente, analista de sistemas. Por 10 anos e um pouco mais tenho trabalhado como analista de negocios e devenvolvimento (linguagem advpl).   
+                        Disciplinada, coerente, apta em solucionar conflitos e com grande capacidade de me adaptar.<br><br>
+                        Mas a estabilidade nao me impede de procurar por experiências desafiadoras em minha carreira. 
+                        Um exemplo, estou aprimorando meus conhecimentos de programacao web.<br><br>
+                        Afinal, um profissional deve continuar em constante evolução. 
+                    </p>    
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills -->
+        <section class="section-x" id="skills">
+            <div class="skills-container">                
+                <div class="skill-item skills-header">
+                    <h1><strong>P</strong>rofessional <strong>S</strong>kills</h1>
+                </div>
+                <div class="skill-item">
+                    <div class="section-item-header">
+                        <h3>HTML 90%</h3>
+                    </div>
+                    <div class="skill-item-bar">
+                        <div class="progress-bar" id="item-html"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skills-item-header">
+                        <h3>CSS 80%</h3>
+                    </div>
+                    <div class="skill-item-bar">
+                        <div class="progress-bar" id="item-css"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-item-header">
+                        <h3>Design 70%</h3>
+                    </div>
+                    <div class="skill-item-bar">
+                        <div class="progress-bar" id="item-des"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-item-header">
+                        <h3>Javascript 30%</h3>
+                    </div>
+                    <div class="skill-item-bar">
+                        <div class="progress-bar" id="item-js"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-item-header">
+                        <h3>Boostrap 15%</h3>
+                    </div>
+                    <div class="skill-item-bar">
+                        <div class="progress-bar" id="item-bs"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-item-header">
+                        <h3>Git e GitHub 70%</h3>
+                    </div>
+                    <div class="skill-item-bar">
+                        <div class="progress-bar" id="item-git"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- section resume -->
+        <section class="section-x" id="resume"> 
+            <div class="resume-container">    
+                <div class="skills-header">
+                    <h1><strong>R</strong>esume</h1>
+                    <div class="resume-header">
+                        <div>
+                            <i class="fas fa-user-graduate"></i>
+                            <span id="edc">Educacao</span>                          
+                        </div>                
+                        <div>
+                            <i class="fas fa-laptop"></i>
+                            <span id="exp">Experiencia</span> 
+                        </div>
+                    </div>
+                </div>                 
+                
+                <div class="resume-row" id="ed1">resume-educacao um
+                </div>                
+                <div class="resume-row" id="ex1">resume-experiencia um
+                </div>
+                <div class="resume-row" id="ed2">resume-educacao dois
+                </div>                
+                <div class="resume-row" id="ex2">resume-experiencia dois
+                </div>
+                <div class="resume-row" id="ed3">resume-educacao tres
+                </div>                
+                <div class="resume-row" id="ex3">resume-experiencia tres
+                </div>
+                <div class="resume-row" id="ed4">resume-educacao quatro
+                </div>                
+                <div class="resume-row" id="ex4">resume-experiencia quatro
+                </div>
+                 
+            </div> 
+        </section>
+
+        <footer class="section-x">
+            <div class="copyright-container">
+                <strong>Copyright © 2021 All rights reserved - juandre670@gmail.com</strong>
+                <div class="social-media">
+                    <a href="#" alt="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" alt="Linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" alt="Indeed"><i class="fas fa-info"></i></a>
+                </div>
+                <p></p>
+            </div>
+        </footer>
+        
+    </div> 
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>  
+    <script type="text/javascript" src="js/language.js"></script>  
+    <script type="text/javascript" src="js/texts.js"></script>
+</body>
+
+</html>    
