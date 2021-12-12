@@ -51,7 +51,7 @@ header{
 }
 
 .banner h1{
-    font-family: var(--font-primaria);
+    font-family: var(--font-secundaria);
     color: #fff;
     font-size: 1.8rem;/*tamanho da fonte do banner. 3x o tamanho da fonte principal. no caso aqui eh a 16px tamanho padrao do navegador*/
     text-shadow: .2rem .2rem 3px rgba(0, 0, 0, .4);
@@ -204,6 +204,7 @@ header{
 }
 
 #me{
+    display: block;
     text-align: justify;
     font-size: 1.2rem;
 }
