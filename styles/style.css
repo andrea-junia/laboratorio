@@ -194,7 +194,7 @@ header{
 
 .about-left {
     width: 50%;
-    background-image: linear-gradient(rgba(121, 118, 118, 0.6), rgba(49, 47, 47, 0.9)), url(../images/me.jpg);
+    background-image: radial-gradient(rgba(217, 235, 217, 0.6), rgba(24, 27, 24, 0.9)), url(../images/me.jpg);
     background-size: cover;
 }
   
@@ -203,10 +203,12 @@ header{
     padding: 1rem 3rem 3rem 3rem;
 }
 
-#me{
+#me1, #me2, #me3{
     display: block;
     text-align: justify;
     font-size: 1.2rem;
+    font-family: var(--font-secundaria);
+    padding: 18px 0px 0px 0px;
 }
   
 /*section skills*/
@@ -333,6 +335,14 @@ header{
     background-color: rgba(180, 176, 176, 0.116);
     border-radius: 0.5rem;
     padding: 0.5rem;;
+}
+
+.resume-row p {    
+    display: block;
+    text-align: justify;
+    font-size: 0.8rem;
+    font-family: var(--font-secundaria);
+    padding: 10px 0px 0px 0px;
 }
 
 /*footer*/
